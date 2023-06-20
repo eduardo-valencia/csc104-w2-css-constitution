@@ -3,7 +3,15 @@
 }
 
 header {
-  margin-bottom: 3.5rem;
+  margin-bottom: 6rem;
+}
+
+section + section {
+  margin-top: 4rem;
+}
+
+p + p {
+  margin-top: 2.8rem;
 }
 
 h1,
@@ -18,10 +26,11 @@ h6 {
 
 p {
   font-size: 1.6rem;
+  line-height: 2.4rem;
 }
 
 .custom-container {
-  padding: 2rem;
+  padding: 4rem 2.5rem;
 }
 @media (min-width: 375px) {
   .custom-container {
