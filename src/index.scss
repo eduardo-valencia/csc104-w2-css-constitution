@@ -17,16 +17,37 @@ $breakpoints: (
   }
 }
 
-p {
-  font-size: 1.6rem;
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
 
 header {
-  margin-bottom: 5rem;
+  margin-bottom: 3.5rem;
 }
 
+//
+// Typography
+//
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Robot Condensed', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1rem;
+}
+
+//
+// Specific styles
+//
 .custom-container {
-  padding: 2rem;
+  padding: 1rem;
 
   @include breakpoint-up('sm') {
     padding: 4rem;
