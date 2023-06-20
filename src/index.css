@@ -2,6 +2,12 @@
   font-family: "Open Sans", sans-serif;
 }
 
+html,
+body {
+  background-color: rgba(0, 0, 0, 0.856);
+  color: white;
+}
+
 section + section {
   margin-top: 4rem;
 }
