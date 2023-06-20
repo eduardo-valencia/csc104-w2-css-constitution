@@ -9,10 +9,12 @@ $breakpoints: (
   'lg': 1024px,
 );
 
+// Allows you to get a breakpoint size by name.
 @function get-breakpoint($size) {
   @return map-get($map: $breakpoints, $key: $size);
 }
 
+// Allows you to create a media query for a breakpoint size.
 @mixin breakpoint-up($size-name) {
   $size: get-breakpoint($size-name);
 
