@@ -6,7 +6,7 @@ $breakpoints: (
   'xs': 320px,
   'sm': 375px,
   'md': 768px,
-  'lg': 1280px,
+  'lg': 1024px,
 );
 
 @function get-breakpoint($size) {
@@ -59,6 +59,11 @@ p,
 summary {
   font-size: 1.6rem;
   line-height: 2.4rem;
+
+  @include breakpoint-up('md') {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
 }
 
 //
