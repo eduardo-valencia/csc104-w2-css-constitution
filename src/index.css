@@ -2,10 +2,6 @@
   font-family: "Open Sans", sans-serif;
 }
 
-header {
-  margin-bottom: 6rem;
-}
-
 section + section {
   margin-top: 4rem;
 }
@@ -24,7 +20,8 @@ h6 {
   font-weight: 700 !important;
 }
 
-p {
+p,
+summary {
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
@@ -44,4 +41,16 @@ p {
     margin-right: auto;
     max-width: 912px;
   }
+}
+
+.custom-header {
+  margin-bottom: 6rem;
+}
+.custom-header__title {
+  margin-bottom: 1rem;
+}
+.custom-header__subtitle {
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 3rem;
 }
