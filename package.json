@@ -1,0 +1,23 @@
+{
+  "name": "csc104-w2-css-constitution",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eduardo-valencia/csc104-w2-css-constitution.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eduardo-valencia/csc104-w2-css-constitution/issues"
+  },
+  "homepage": "https://github.com/eduardo-valencia/csc104-w2-css-constitution#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
