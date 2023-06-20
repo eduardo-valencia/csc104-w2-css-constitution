@@ -1,0 +1,42 @@
+$breakpoints: (
+  'xs': 320px,
+  'sm': 375px,
+  'md': 768px,
+  'lg': 1280px,
+);
+
+@function get-breakpoint($size) {
+  @return map-get($map: $breakpoints, $key: $size);
+}
+
+@mixin breakpoint-up($size-name) {
+  $size: get-breakpoint($size-name);
+
+  @media (min-width: $size) {
+    @content;
+  }
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+header {
+  margin-bottom: 5rem;
+}
+
+.custom-container {
+  padding: 2rem;
+
+  @include breakpoint-up('sm') {
+    padding: 4rem;
+  }
+
+  @include breakpoint-up('md') {
+    width: 70%;
+    $margin-x: auto;
+    margin-left: $margin-x;
+    margin-right: $margin-x;
+    max-width: 912px;
+  }
+}
