@@ -17,9 +17,8 @@ $breakpoints: (
   }
 }
 
-html {
+* {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
 }
 
 header {
@@ -35,19 +34,19 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Robot Condensed', sans-serif;
-  font-weight: 700;
+  font-family: 'Robot Condensed', sans-serif !important;
+  font-weight: 700 !important;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 //
 // Specific styles
 //
 .custom-container {
-  padding: 1rem;
+  padding: 2rem;
 
   @include breakpoint-up('sm') {
     padding: 4rem;
